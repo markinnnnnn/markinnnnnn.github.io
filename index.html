@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Controle de Data Girando</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="overlay" id="warningOverlay">
+  <div class="warning-box">
+    <p>Calma lá amigão, não saia da estrada</p>
+    <button onclick="hideWarning()">Tentar novamente</button>
+  </div>
+</div>
+
+<form>
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+  <label for="nascimento">Data de Nascimento</label>
+  <input type="date" id="nascimento" name="nascimento" required max="" />
+
+  <button type="submit">Enviar</button>
+</form>
+
+<div class="circle-container">
+  <div class="circle-track" id="circle">
+    <div class="road-stripe"></div>
+    <div class="road-stripe"></div>
+    <div class="car" id="car">🚗</div>
+  </div>
+  <div class="hint">Gire o círculo para alterar a sua data</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
